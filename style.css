@@ -1,11 +1,153 @@
-.modal {
+h1 {
+	text-transform: capitalize;
+}
+
+.modalTest {
+	display: block;
+}
+
+.modalTest li {
+	padding-bottom: 10px;
+}
+
+.modalTest h2 {
+	font-size: 26px;
+}
+
+.modalRelative {
+	display: none;
+	position: relative;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background: yellow;
+	border-radius: 15px;
+	border: 3px solid black;
+	height: 300px;
+	width: 300px;
+}
+
+.modalAbsolute {
+	display: none;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background: yellow;
+	border-radius: 15px;
+	border: 3px solid black;
+	height: 300px;
+	width: 300px;
+}
+
+.modalFixed {
+	display: none;
+	position: fixed;
+	top: 25%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background: yellow;
+	border-radius: 15px;
+	border: 3px solid black;
+	height: 300px;
+	width: 300px;
+}
+
+
+/* Z-iNDEX */
+.z-index3 {
 	display: none;
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 40%;
 	transform: translate(-50%, -50%);
-	background: red;
-	color: white;
+	text-align: center;
+	background: yellow;
 	border-radius: 15px;
 	border: 3px solid black;
+	height: 300px;
+	width: 300px;
+	z-index: 3;
+}
+
+.z-index2 {
+	display: none;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background: yellow;
+	border-radius: 15px;
+	border: 3px solid black;
+	height: 300px;
+	width: 300px;
+	z-index: 2;
+}
+
+.z-index1 {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background: yellow;
+	border-radius: 15px;
+	border: 3px solid black;
+	height: 300px;
+	width: 300px;
+	z-index: 1;
+}
+
+.text {
+	position: relative;
+	top: 25%;
+	color: black;
+	text-transform: capitalize;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.openModalRelative,
+.openModalAbsolute,
+.openModalFixed,
+.z-index 3,
+.z-index 2,
+.z-index 1 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.closeModalRelative,
+.closeModalAbsolute,
+.closeModalFixed,
+.closeZ-index3,
+.closeZ-index2,
+.closeZ-index1  {
+	position: absolute;
+	bottom: 10px;
+	background: red;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+footer {
+	margin-top: 50%;
+	margin-left: 30px;
+}
+
+footer button {
+	margin-bottom: 5px;
+}
+
+footer a,
+footer a:hover {
+	color: white;
 }

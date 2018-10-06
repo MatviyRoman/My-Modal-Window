@@ -15,18 +15,141 @@
   </head>
   <body>
     <h1>
-      Hello, world!
+      hello, world!
     </h1>
-    <p>
-      This is my window modal.
-    </p>
-    <p>
-      Click this 
-      <button class="openModal">
-        button
-      </button> 
-      for show my modal.
-    </p>
+    <!-- Modal Test -->
+    <div class="modalTest">
+      <p>
+        This is my window modal test.
+      </p>
+      <ol type="number">
+        <li>
+          <h2>
+            display: relative;
+          </h2>
+          Click this 
+          <button class="openModalRelative">
+            button
+          </button> 
+          for show my modal.
+        </li>
+        <li>
+          <h2>
+            display: absolute;
+          </h2>
+          Click this 
+          <button class="openModalAbsolute">
+            button
+          </button> 
+          for show my modal.
+        </li>
+        <li>
+          <h2>
+            display: fixed;
+          </h2>
+          Click this 
+          <button class="openModalFixed">
+            button
+          </button> 
+          for show my modal.
+        </li> 
+      </ol>
+    </div>
+
+    <div class="modalRelative">
+      <p class="text">
+        relative
+      </p>
+      <button class="closeModalRelative">close window</button>
+    </div>
+
+    <div class="modalAbsolute">
+      <p class="text">
+        absolute
+      </p>
+      <button class="closeModalAbsolute">close window</button>
+    </div>
+
+    <div class="modalFixed">
+      <p class="text">
+        fixed
+      </p>
+      <button class="closeModalFixed">close window</button>
+    </div>
+
+    <!-- Z-iNDEX Test -->
+    <div class="modalTest">
+      <p>
+        This is my z-index test.
+      </p>
+      <ol type="number">
+        <li>
+          <h2>
+            z-index: 3;
+          </h2>
+          Click this 
+          <button class="openZ-index3">
+            button
+          </button> 
+          for show z-index 3.
+        </li>
+        <li>
+          <h2>
+            z-index: 2;
+          </h2>
+          Click this 
+          <button class="openZ-index2">
+            button
+          </button> 
+          for show z-index 2.
+        </li>
+        <li>
+          <h2>
+            z-index: 1;
+          </h2>
+          Click this 
+          <button class="openZ-index1">
+            button
+          </button> 
+          for show z-index 1.
+        </li> 
+      </ol>
+    </div>
+
+    <div class="z-index3">
+      <p class="text">
+        z-index 3
+      </p>
+      <button class="closeZ-index3">close window</button>
+    </div>
+
+    <div class="z-index2">
+      <p class="text">
+        z-index 2
+      </p>
+      <button class="closeZ-index2">close window</button>
+    </div>
+
+    <div class="z-index1">
+      <p class="text">
+        z-index 1
+      </p>
+      <button class="closeZ-index1">close window</button>
+    </div>
+
+
+
+    <footer>
+      <div class="copyright">
+        <button type="button" class="btn btn-info">
+        <a href="http://matviy.pp.ua">Matviy.pp.ua</a>
+        </button>
+        <br>
+        <button type="button" class="btn btn-info">
+        <a href="http://github.com/MatviyRoman">GitHub</a>
+        </button>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -34,12 +157,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <script>
-      $(window).on('load', function(){
-        $('.openModal').click(function(){
-          $('.modal').show();
-          })
-      });
+    <script src="main.js"> 
     </script>
   </body>
 </html>
